@@ -1,0 +1,14 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /chats/{chatId} {
+      // Allow users to read their own messages
+      allow read: if request.auth != null && resource.data.userId == request.auth.uid;
+      // Allow users to create messages with their own userId
+      allow create: if request.auth != null && request.resource.data.userId == request.auth.uid;
+      // Allow users to update their own messages
+      allow update: if request.auth != null && resource.data.userId == request.auth.uid;
+    }
+  }
+}
