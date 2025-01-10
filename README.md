@@ -38,6 +38,9 @@ A modern AI-powered learning companion built with React, Firebase, and Google's 
 ## 🚀 Getting Started
 
 1. Clone the repository
+   ```bash
+   git clone https://github.com/harshrathod/Coding-Chat-bot.git
+   ```
 2. Install dependencies:
    ```bash
    npm install
@@ -121,9 +124,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Harsh Rathod**
-
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Harsh Rathod](https://linkedin.com/in/yourusername)
 
 ## 🙏 Acknowledgments
 
