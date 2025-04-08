@@ -2,7 +2,7 @@ import { GeminiResponse } from '../types';
 
 export async function callGeminiAPI(prompt: string): Promise<GeminiResponse> {
   const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-  const API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
+  const API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
   
   try {
     const response = await fetch(`${API_URL}?key=${API_KEY}`, {
